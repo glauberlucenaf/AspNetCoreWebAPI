@@ -7,17 +7,15 @@ namespace SmartSchool.API.Models
 {
     public class AlunoDisciplina
     {
-        public AlunoDisciplina()
-        {
+        public AlunoDisciplina() { }
 
-        }
-        public AlunoDisciplina(int aLunoId, int disciplinaId)
+        public AlunoDisciplina(int AlunoId, int disciplinaId)
         {
-            ALunoId = aLunoId;
+            AlunoId = AlunoId;
             DisciplinaId = disciplinaId;
         }
 
-        public int ALunoId { get; set; }
+        public int AlunoId { get; set; }
         public Aluno Aluno { get; set; }
         public int DisciplinaId { get; set; }
         public Disciplina Disciplina { get; set; }
